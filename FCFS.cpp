@@ -5,7 +5,7 @@ int main(){
     int n;cin>>n;
     int p[n];//[6];
     int at[n];
-    cout<<"Enter the arrival times(Serial-wise) => ";
+    cout<<"Enter the arrival times(Ascending-Order) => ";
     for(int i=1;i<=n;i++){
         cin>>at[i];
         //cin>>p[i][1];
