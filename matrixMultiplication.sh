@@ -27,7 +27,7 @@ for((j=0;j<q;j++)) do
 m[$i,$j]=0
 done
 done
-if(($n==$p))
+if [ $n==$p ]
 then
 echo "The required multiplication is =>"
 for((i=0;i<m;i++)) do
