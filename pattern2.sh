@@ -7,4 +7,3 @@ do echo -n "* "
 done
 echo
 done
-

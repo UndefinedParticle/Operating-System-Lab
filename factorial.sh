@@ -1,15 +1,21 @@
 #!/bin/bash
-factorial()
+fact ()
 {
-if [ $n = 0 ]
-then
-echo "1"
+product=$1
+if ((product <= 2)); then
+echo $product
 else
-product=$((factorial $(( $n - 1 ))))
-echo $(($n*product))
+f=$((product -1))
+f=$(fact $f)
+f=$((f*product))
+echo $f
 fi
 }
-echo "Enter an positive integer => "
+echo "Enter a Number => "
 read n
-echo "Factorial is => "
-factorial $n
+echo -n "Factorial of " $n " is => "
+if ((n==0)); then
+echo "1"
+else
+fact $n
+fi
