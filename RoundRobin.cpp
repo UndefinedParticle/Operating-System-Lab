@@ -1,5 +1,4 @@
 #include<iostream>
-#include<queue>
 using namespace std;
 int main(){
     cout<<"Enter the total number of process => ";
@@ -22,7 +21,7 @@ int main(){
     }
     cout<<"Give the time-quantam => ";
     int q;cin>>q;
-    int ct[n];
+    //int ct[n];
     int wt[n];
     int current=at[1];//current time
     float sum1=0;
