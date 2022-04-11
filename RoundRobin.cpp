@@ -29,7 +29,7 @@ int main(){
     while(1){
         int process=1;
         for(int i=1;i<=n;i++){
-           if(reTime[i]>0 && at[i]<=current){
+           if(reTime[i]>0){
                 process=0;
                 if(reTime[i]>q){
                     current=current+q;
